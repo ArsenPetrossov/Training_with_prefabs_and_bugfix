@@ -9,7 +9,7 @@ public class Task2 : MonoBehaviour
     
     private void Start()
     {
-        Instantiate(_wallPrefab);
-        _wallPrefab.position = _targetPosition;
+        Instantiate(_wallPrefab,_targetPosition,_wallPrefab.rotation);
+        //wall.position = _targetPosition;
     }
 }

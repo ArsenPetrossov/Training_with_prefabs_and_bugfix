@@ -7,8 +7,8 @@ public class Task4 : MonoBehaviour
     
     private void Start()
     {
-        Instantiate(_shelfPrefab); // Эту строку кода удалять нельзя
+        var shelf = Instantiate(_shelfPrefab); // Эту строку кода удалять нельзя
         
-        Destroy(_shelfPrefab);
+        Destroy(shelf.gameObject);
     }
 }

@@ -9,7 +9,7 @@ public class Task1 : MonoBehaviour
     
     private void Start()
     {
-        Instantiate(_wallPrefab);
-        _wallPrefab.localScale = _targetScale;
+        var wall = Instantiate(_wallPrefab);
+        wall.localScale = _targetScale;
     }
 }
